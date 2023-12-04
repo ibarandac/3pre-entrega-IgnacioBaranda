@@ -1,13 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <title>Buscador de Jugadores de Fútbol</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <h1>Busca o añade tu propia lista de Jugadores de Fútbol</h1>
+  <input type="text" id="entradaBusqueda" placeholder="Buscar jugadores, equipos o nacionalidades">
+  <button onclick="buscar()">Buscar</button>
+  
+  <table id="tablaResultados">
+    <thead>
+      <tr>
+        <th>Nombre</th>
+        <th>Equipo</th>
+        <th>Nacionalidad</th>
+      </tr>
+    </thead>
+    <tbody id="cuerpoResultados">
     
+    </tbody>
+  </table>
 
-    <script src="main.js"></script>
+  <div id="sinResultados">
+   
+  </div>
+
+  <div id="agregarNuevoJugador" style="display: none;">
+  
+    <input type="text" id="nuevoJugadorNombre" placeholder="Nombre">
+    <input type="text" id="nuevoJugadorEquipo" placeholder="Equipo">
+    <input type="text" id="nuevoJugadorNacionalidad" placeholder="Nacionalidad">
+    <button onclick="agregarNuevo()">Agregar nuevo</button>
+  </div>
+
+  <script src="main.js"></script>
 </body>
 </html>
