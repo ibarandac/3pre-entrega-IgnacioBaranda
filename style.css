@@ -1,0 +1,41 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  padding: 8px;
+  margin: 10px 0;
+}
+
+button {
+  padding: 8px 12px;
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+table {
+  border-collapse: collapse;
+  width: 70%;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
